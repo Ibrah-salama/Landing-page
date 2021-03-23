@@ -8,14 +8,19 @@
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
   <header class="page__header">
     <nav class="navbar__menu">
+      <!-- add hamburger button to the nav bar -->
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
       <!-- Navigation starts as empty UL that will be populated with JS -->
-      <ul id="myList">
+      <ul class="nav__ul" id="myList">
       </ul>
     </nav>
   </header>
