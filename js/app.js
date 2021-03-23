@@ -27,6 +27,10 @@ var docFragment = document.createDocumentFragment();
 const alinks = document.getElementsByTagName('a')
 //select all li
 const li = document.getElementsByTagName('li')
+// select the hamburger button 
+const hamburger = document.getElementById('hamburger')
+//select the list of nav items
+const navUl = document.getElementsByClassName('nav__ul')[0]
 /**
  * End Global Variables
  * Start Helper Functions
@@ -111,3 +115,7 @@ function toggleActiveState(){
     },option)
     sections.forEach((sec)=>{ interActObserv.observe(sec)})
 }
+//add event listner to the hamburger button to show the list while click 
+hamburger.addEventListener('click',()=>{
+    navUl.classList.toggle('show');
+})

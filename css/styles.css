@@ -64,22 +64,56 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+
+/* styling for hamburger */
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
     text-align: right;
 }
-
+.hamburger{
+    background-color:transparent;
+    border: 0;
+    color: rgb(26, 1, 38);
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    padding: 10px;
+    display: none;
+}
+.hamburger:focus{
+    outline: none;
+}
 .navbar__menu li {
     display: inline-flex;
 }
 
+/* add responsive to the landing page */
+@media screen and (max-width:600px){
+    .nav__ul {
+        display: none;  
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .nav__ul.show {
+        display: flex;
+        
+    }
+    .hamburger{
+        display: block;
+    }
+
+}
 .navbar__menu .menu__link {
     display: block;
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
     color: #000;
+}
+nav{
+    flex-wrap: wrap;
 }
 
 .navbar__menu .menu__link:hover {
@@ -106,6 +140,7 @@ section {
 }
 #myList{
     float: left;
+
 }
 /* Footer Styles */
 .page__footer {
