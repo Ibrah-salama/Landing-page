@@ -73,7 +73,28 @@ section {
 .navbar__menu li {
     display: inline-flex;
 }
-
+/* */
+.toggle{
+    color:black;
+    float:right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:657px){
+    .toggle{
+        display: block;
+    }
+    #navbar__list{
+        display: none;
+        flex-direction: column;
+        width : 100%
+    }
+    #navbar__list.show{
+        display: flex;
+    }
+}
 .navbar__menu .menu__link {
     display: block;
     padding: 1em;
@@ -218,9 +239,11 @@ section.your-active-class .landing__container::after {
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
 .item-active-class{
-    background-color: #314763;
-    color: #eee;
-
+    /* background-color: #314763;
+    color: #eee; */
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
 }
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {

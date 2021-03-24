@@ -8,13 +8,17 @@
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
   <header class="page__header">
-    <nav class="navbar__menu">
+    <nav class="navbar__menu ">
       <!-- Navigation starts as empty UL that will be populated with JS -->
+      <div class="toggle"> 
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
       <ul id="myList">
       </ul>
     </nav>
